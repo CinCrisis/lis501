@@ -1,0 +1,21 @@
+.wrapper {
+	overflow: hidden;
+	width: 80%;
+	max-width: 75rem;
+	margin: 0 auto;
+
+/*	@mixin atDesk {
+		padding-left: 6.25rem;
+		padding-right: 6.25rem;
+	}
+*/
+	&--visible {
+		overflow: visible;
+	}
+
+	&__max-w {
+		max-width: 85rem;
+		margin: 0 auto;
+	}
+
+}

@@ -1,0 +1,21 @@
+@define-mixin atDesk {
+	@media (min-width: 1050px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atTab {
+	@media (min-width: 750px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+/* use @mixin clearfix; within selector's curly brackets to add clearfix to code */

@@ -1,0 +1,97 @@
+.footer {
+	padding: 3rem 0 0 0;
+	background-color: $darkBrown;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	font-size: .85rem;
+	font-weight: 400;
+	letter-spacing: .125rem;
+
+	@mixin atDesk{
+		padding: 5rem 0 0 0;
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
+	&--center-text {
+		text-align: center;
+	}
+
+	&--logo {
+		width: 15rem;
+		margin: 0 auto;
+		text-align: center;
+
+		@mixin atDesk {
+			width: 20rem;
+		}
+
+		img {
+			width: 40%;
+/*			margin-bottom: 3em;
+
+			@mixin atDesk {
+				margin-bottom: 5rem; 
+			} */
+		}
+	}
+
+}
+
+/*
+.flex-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@mixin atDesk {
+		flex-direction: row;
+	}
+}
+
+ 	&--box {
+		width: 90%;
+
+		@mixin atDesk{
+			width: 33.3%;
+			max-width: 23rem;
+		}
+	}
+
+	&--box1 {
+		margin: 0 auto;
+		order: 1;
+		text-align: center;
+		padding: 0 0 3rem 0;
+
+		@mixin atDesk {
+			padding: 2.5rem 3rem 2.5rem 0;
+			text-align: left;
+		}
+
+		a {
+			text-decoration: underline;
+			color: #fff;
+		}
+	}
+
+	&--box2 {
+		order: 2;
+	}
+
+	&--box3 {
+		margin: 0 auto;
+		padding: 0 0 3rem 0;
+		order: 0;
+		text-align: center;
+
+		@mixin atDesk {
+			padding: 2.5rem 0 2.5rem 3rem;
+			order: 3;
+			text-align: right;
+		}
+	}
+
+
+
+*/

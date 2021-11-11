@@ -1,0 +1,110 @@
+.section {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	@mixin atDesk {
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;		
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		flex: 1;
+		min-width: 25rem;
+	}
+
+	&--bg-brown {
+		position: relative;
+		background-color: $lightBrown;
+		width: 100%;
+		color: #fff;
+	}
+
+/* BEGIN YOUTUBE */
+.embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @mixin atDesk {
+    	margin-top: 2.5rem;
+    	margin-bottom: 2.5rem;
+    }
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* END YOUTUBE */
+
+	&--bg-purple {
+		position: relative;
+		background-color: $darkPurple;
+		width: 100%;
+		color: #fff;
+
+		a {
+			color: #fff;
+		}
+	}
+
+/* BEGIN TWITTER */
+.twitter-box {
+	width: 100%;
+	margin: 0 auto; 
+	text-align: center;
+
+	@mixin atDesk {
+		width: 50%;
+	}
+
+}
+/* END TWITTER */
+
+	&--small-text {
+		font-size: .75em;
+	}
+
+	&__text-body {
+		margin: 0 auto;
+
+/*		@mixin atDesk {
+			width: 60%;
+			max-width: 62rem;
+			padding: 5rem 6.25rem 0rem 6.25rem;
+			margin: 0 auto;
+		}
+*/
+		&--paragraph {
+			font-size: .75em;
+			font-family: 'Roboto', serif;
+			font-weight: 400;
+			text-align: justify;
+
+			@mixin atDesk {
+				font-size: 1em;
+				font-weight: 400;
+			}
+		}
+	}
+}

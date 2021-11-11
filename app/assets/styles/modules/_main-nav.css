@@ -1,0 +1,41 @@
+.main-nav {
+	color: #fff;
+	letter-spacing: .1em;
+	font-family: 'Roboto Slab', serif;
+
+	a {
+		color: #fff;
+
+		&.current-link {
+			color: $lightBrown;
+		}
+	}
+
+	ul {
+		margin: 2rem 0 0 0;
+		padding: 0;
+
+		@mixin atDesk {
+			margin: 1.75rem 0 0 0;
+		}
+	}
+
+	li {
+		list-style: none;
+		padding: 0 1rem;
+		text-align: center;
+		display: inline-block;
+		font-weight: 600;
+		font-size: .65em;
+
+		a {
+			text-decoration: none!important;
+		}
+
+		@mixin atDesk {
+			font-size: .75em;
+			padding: 0 2.5rem;
+			font-weight: 500;
+		}
+	}
+}

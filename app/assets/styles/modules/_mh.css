@@ -1,0 +1,33 @@
+.mh {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	margin: 6rem auto 3.25rem auto; */
+	width: 100%;
+	margin-top: 6rem;
+	min-height: 400px;
+	background-image: url('assets/images/books-bg.jpg');
+	box-shadow: 0px 5px 5px #999;
+
+	@mixin atDesk {
+		min-height: 650px;
+/*		margin: 7.5rem auto 5rem auto; */
+	}
+
+/*	@mixin atDesk {
+		margin: 10rem auto;
+	}
+*/	
+	&__logo {
+		margin: 0 auto;
+		width: 70%;
+		max-width: 10rem;
+
+		@mixin atTab {
+			width: 40%;
+			max-width: 15rem;
+		}
+	}
+}
+/* mobile/small size is < 1050px */

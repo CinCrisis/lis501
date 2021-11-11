@@ -1,0 +1,106 @@
+/*
+Margins, mobile:
+
+
+Margins, tablet:
+
+
+Margins, desk: 6rem
+
+*/
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	color: $darkBrown;
+
+	@mixin atDesk {
+		font-size: 2em;
+	}
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	text-align: justify;
+}
+
+.p-text-center-mobile {
+	text-align: center;
+
+	@mixin atDesk {
+		text-align: justify!important;
+	}
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.clear {
+	clear: both;
+}
+
+hr {
+	width: 50px;
+	margin: 0 auto 1.5rem auto;
+
+	@mixin atDesk {
+		margin: 0 auto 2.5rem auto;
+	}
+}
+
+a {
+	text-decoration: underline;
+	color: $lightBrown;
+}
+
+.separator {
+	width: 75px;
+	margin: 3rem auto 0 auto;
+
+	@mixin atDesk {
+		width: 200px;
+		margin: 0 auto;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.hidden {
+	visibility: hidden;
+	height: 0;
+}
+
+.extra-padding {
+	padding-bottom: 1.5rem;
+
+	@mixin atDesk {
+		padding-bottom: 2.5rem;
+	}
+}
+
+.extra-padding-top {
+	padding-top: 1.5rem;
+
+	@mixin atDesk {
+		padding-top: 2.5rem;
+	}
+}
+
+.less-padding {
+	padding-bottom: 1.5rem!important;
+
+	@mixin atDesk {
+		padding-bottom: 2.5rem!important;
+	}
+}

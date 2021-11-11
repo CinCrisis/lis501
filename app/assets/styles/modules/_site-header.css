@@ -1,0 +1,17 @@
+.site-header {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: $darkBrown;
+	top: 0;
+	height: 6rem;
+
+	&__menu-items {
+		display: flex;
+		justify-content: center;
+	}
+
+	&--border {
+		box-shadow:0px 1px 5px #000;
+	}
+}

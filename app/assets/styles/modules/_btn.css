@@ -1,0 +1,34 @@
+.btn {
+		color: #fff;
+		font-size: 1.25em;
+		text-decoration: none;
+		padding-top: .35rem;
+		padding-bottom: .8rem;
+		display: inline-block;
+		text-transform: uppercase;
+		transform: scaleY(1.5);
+		letter-spacing: 0.125rem;
+		font-weight: 400;
+
+	&__container {
+		width: 100%;
+		margin-top: 0rem;
+		background-color: $greyBlue;
+		text-align: center;
+		border: 0;
+
+		@mixin atDesk {
+			margin-top: 1.25rem;
+		
+		}
+	}
+
+	&__center {
+		width: 75%;
+		margin: 0 auto;
+
+		@mixin atDesk {
+			width: 30rem;
+		}
+	}
+}

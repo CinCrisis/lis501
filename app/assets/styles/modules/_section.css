@@ -20,6 +20,9 @@
 		flex-basis: 100%;
 		flex: 1;
 		min-width: 25rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		overflow-wrap: break-word;
 	}
 
 	&--bg-brown {

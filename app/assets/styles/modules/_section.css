@@ -88,6 +88,13 @@
 		font-size: .75em;
 	}
 
+	&--left {
+
+		p {
+			text-align: left!important;
+		}
+	}
+
 	&__text-body {
 		margin: 0 auto;
 

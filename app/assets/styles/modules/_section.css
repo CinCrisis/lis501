@@ -19,10 +19,16 @@
 		flex-direction: column;
 		flex-basis: 100%;
 		flex: 1;
-		min-width: 25rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
+		width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
 		overflow-wrap: break-word;
+
+		@mixin atDesk {
+			width: 25rem;
+			padding-left: 3rem;
+			padding-right: 3rem;			
+		}
 	}
 
 	&--bg-brown {
